@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1005493734783",
+    "project_id": "das-nursery",
+    "storage_bucket": "das-nursery.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1005493734783:android:0daa5357bdfa7df3f2de4a",
+        "android_client_info": {
+          "package_name": "com.shullabs.das_nursery_official"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1005493734783-6eosaabh2jqje6iovca9qj91asm4imla.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNjYFRlHEM1GCZwIi_Ntcj6dB9uHHlnX8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1005493734783-6eosaabh2jqje6iovca9qj91asm4imla.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

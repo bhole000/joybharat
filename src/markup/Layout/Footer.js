@@ -43,12 +43,12 @@ function Footercol1(){
 				<div className="footer-logo">
 					<Link to="./"><img src={logowhite} alt=""/></Link> 
 				</div>
-				<p>Surround yourself with fresh energy, high-tech amenities, and elevated style. Indulge in extraordinary amenities, relax in appealing social spaces.</p>
+				<p>Marble • Tiles • Sanitaryware.</p>
 				<div className="dlab-social-icon">
 					<ul>
-						<li><Link to={{  pathname:"https://www.facebook.com/makeandDisplay"}} className="fa fa-facebook mr-1" target="_blank" rel="noopener noreferrer" ></Link></li>
-						<li><Link to={{  pathname:"https://www.linkedin.com/company/make-display-interior/"}} className="fa fa-linkedin mr-1" target="_blank" rel="noopener noreferrer"  ></Link></li>
-						<li><Link to={{  pathname:"https://www.instagram.com/makendisplay/"}} className="fa fa-instagram" target="_blank" rel="noopener noreferrer" ></Link></li>
+						<li><Link to={{  pathname:"#"}} className="fa fa-facebook mr-1" target="_blank" rel="noopener noreferrer" ></Link></li>
+						<li><Link to={{  pathname:"#"}} className="fa fa-linkedin mr-1" target="_blank" rel="noopener noreferrer"  ></Link></li>
+						<li><Link to={{  pathname:"#"}} className="fa fa-instagram" target="_blank" rel="noopener noreferrer" ></Link></li>
 					</ul>
 				</div>
 			</div>

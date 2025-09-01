@@ -60,7 +60,7 @@ class ContactUs2 extends Component {
                 <h2 className="title">Always Help You</h2>
               </div>
               <div className="banner-map">
-                <iframe title="google_map" allowfullscreen style={{ border: "0", width: "100%", minHeight: "500px" }} className="border-0 align-self-stretch rounded-sm" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&height=800&hl=en&q=Chandannagar+West+Bengal SBD BRICKFIELD&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe>
+                <iframe title="google_map" allowfullscreen style={{ border: "0", width: "100%", minHeight: "500px" }} className="border-0 align-self-stretch rounded-sm" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29418.04143054575!2d88.09201418476565!3d22.830046754629773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f863063fa410f9%3A0xd51e4e49c0d7d086!2sJoy%20Bharat%20Agency!5e0!3m2!1sen!2sin!4v1756407197615!5m2!1sen!2sin"></iframe>
                 {/*<iframe
                   title="google_map"
                   src="https://www.google.com/maps/place/Chandannagar,+West+Bengal/@22.8630194,88.3410242,17.72z/data=!4m5!3m4!1s0x39f891c05d059fa9:0x516c5f246932de74!8m2!3d22.867114!4d88.3674381"
@@ -109,7 +109,7 @@ class ContactUs2 extends Component {
                     </div>
                     <div className="icon-content">
                       <h3 className="dlab-tilte m-b5">Email</h3>
-                      <p>contact@makendisplay.in</p>
+                      <p>joybharatagencies@gmail.com</p>
                     </div>
                   </div>
                 </div>

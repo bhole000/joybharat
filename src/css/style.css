@@ -14268,7 +14268,7 @@ label.error {
         background-color: #fff; }
 @media only screen and (max-width: 767px) {
   .home-slider-2 .project-media img {
-    height: 400px; }
+    height: auto; }
   .home-slider-2 .slider-content .slide-content-box .slide-content-area .slider-title {
     font-size: 34px;
     line-height: 41px; }

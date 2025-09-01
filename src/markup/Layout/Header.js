@@ -161,9 +161,9 @@ function HeaderContent() {
                     {/* <li>
                       <Link to={"/company-history"}>Company History</Link>
                     </li> */}
-                    <li>
+                    {/* <li>
                       <Link to={"/privacy-policy"}>Privacy Policy</Link>
-                    </li>
+                    </li> */}
                     {/* <li>
                       <Link to={"/404-page"}>404 Error</Link>
                     </li> */}
@@ -202,7 +202,7 @@ function HeaderContent() {
                   </ul> */}
                 </li>
                 <li>
-                  <Link to={"/blog-masonry"}>Blog</Link>
+                  <Link to={"/blog-masonry"}>gallery</Link>
                   {/* <ul className="sub-menu">
                     <li>
                       <Link to={"/blog-grid"}>Blog Grid</Link>
@@ -218,17 +218,17 @@ function HeaderContent() {
                     </li>
                   </ul> */}
                 </li>
-                <li>
+                {/* <li>
                   <Link to={"/contact-us-2"}>Contact Us</Link>
-                  {/* <ul className="sub-menu">
+                  <ul className="sub-menu">
                     <li>
                       <Link to={"/contact-us-1"}>Contact Us 1</Link>
                     </li>
                     <li>
                       <Link to={"/contact-us-2"}>Contact Us 2</Link>
                     </li>
-                  </ul> */}
-                </li>
+                  </ul>
+                </li> */}
               </ul>
               <div className="dlab-social-icon">
                 <ul>

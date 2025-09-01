@@ -13,9 +13,9 @@ import  bnr2 from './../../../images/amenities/bg/pic2.jpg';
 import  bnr3 from './../../../images/amenities/bg/pic3.jpg';
 
 const backgrounBlog = [
-	{image: bnr1 , title: 'Dive in To The Aquamarine waters of our swanky Swimming pool', },	
+	{image: bnr1 , title: 'JoyBharat Agencies,', },	
 	{image: bnr2 , title: 'Temple', },	
-	{image: bnr3 , title: 'Squash Court', },	
+	{image: bnr3 , title: 'Showroom of Marbles', },	
 ];
 
 class Aboutus extends Component{
@@ -79,7 +79,7 @@ class Aboutus extends Component{
 								<div className="aminite-over-area">
 									<div className="overlay-box">
 										<h2 className="title">{data.title}</h2>
-										<p>Swim in the sparking blue water or simply chill out at the pool side. Take a relaxing dip or a few laps in the swimming pool and let the calming water soothe your body and soul</p>
+										<p>Marble • Tiles • Sanitaryware.</p>
 									</div>
 								</div>
 							</div>
@@ -87,9 +87,9 @@ class Aboutus extends Component{
 					</section>	
 					{/* Section-4 Strat */ }
 					{/* Section-5 Strat */ }
-					<section className="content-inner-2" data-content="NEWS & EVENT" id="newsEvent">
+					{/* <section className="content-inner-2" data-content="NEWS & EVENT" id="newsEvent">
 						<EventSection />
-					</section>	
+					</section>	 */}
 					{/* Section-5 Strat End*/ }
 				</div>
 				<Footer2 />

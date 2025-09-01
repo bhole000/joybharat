@@ -21,6 +21,12 @@ import main1 from './../../../images/gallery/main1.jpg';
 import spec1 from './../../../images/specifications/pic1.jpg';
 import spec2 from './../../../images/specifications/pic2.jpg';
 import spec3 from './../../../images/specifications/pic3.jpg';
+import spec4 from './../../../images/specifications/pic4.jpg';
+import spec5 from './../../../images/specifications/pic5.jpg';
+import spec6 from './../../../images/specifications/pic6.jpg';
+import spec7 from './../../../images/specifications/pic7.jpg';
+import spec8 from './../../../images/specifications/pic8.jpg';
+import spec9 from './../../../images/specifications/IMG_8206.JPG';
 						  					   
 import main2 from './../../../images/gallery/main2.jpg';
 import main3 from './../../../images/gallery/main3.jpg';
@@ -36,18 +42,18 @@ import gallery4 from './../../../images/gallery/pic4.jpg';
 import gallery5 from './../../../images/gallery/pic5.jpg';
 import gallery6 from './../../../images/gallery/pic6.jpg';
 
-import services1 from './../../../images/services/pic1.jpg';
-import services2 from './../../../images/services/pic2.jpg';
-import services3 from './../../../images/services/pic3.jpg';
-import services4 from './../../../images/services/pic4.jpg';
-import services5 from './../../../images/services/pic5.jpg';
-import services6 from './../../../images/services/pic6.jpg';
-import services7 from './../../../images/services/pic7.jpg';
-import services8 from './../../../images/services/pic8.jpg';
-import services9 from './../../../images/services/pic9.jpg';
-import services10 from './../../../images/services/pic10.jpg';
-import services11 from './../../../images/services/pic11.jpg';
-import services12 from './../../../images/services/pic12.jpg';
+// import services1 from './../../../images/services/pic1.jpg';
+// import services2 from './../../../images/services/pic2.jpg';
+// import services3 from './../../../images/services/pic3.jpg';
+// import services4 from './../../../images/services/pic4.jpg';
+// import services5 from './../../../images/services/pic5.jpg';
+// import services6 from './../../../images/services/pic6.jpg';
+// import services7 from './../../../images/services/pic7.jpg';
+// import services8 from './../../../images/services/pic8.jpg';
+// import services9 from './../../../images/services/pic9.jpg';
+// import services10 from './../../../images/services/pic10.jpg';
+// import services11 from './../../../images/services/pic11.jpg';
+// import services12 from './../../../images/services/pic12.jpg';
 
 
 class Index1 extends React.Component{
@@ -125,6 +131,12 @@ class Index1 extends React.Component{
 									<Link to={"#"}><img src={spec1} id="Capmap1" className="active" alt=""/></Link>
 									<Link to={"#"}><img src={spec2} id="Capmap2" alt=""/></Link>
 									<Link to={"#"}><img src={spec3} id="Capmap3" alt=""/></Link>
+									<Link to={"#"}><img src={spec4} id="Capmap4" alt=""/></Link>
+									<Link to={"#"}><img src={spec5} id="Capmap5" alt=""/></Link>
+									<Link to={"#"}><img src={spec6} id="Capmap6" alt=""/></Link>
+									<Link to={"#"}><img src={spec7} id="Capmap7" alt=""/></Link>
+									<Link to={"#"}><img src={spec8} id="Capmap8" alt=""/></Link>
+									<Link to={"#"}><img src={spec9} id="Capmap9" alt=""/></Link>
 								</div>
 							</div>
 							<SpecificationsBlog />
@@ -280,7 +292,7 @@ class Index1 extends React.Component{
 					</section>
 					{/* Section-5 End*/}
 					{/* Section-6 Start*/}
-					<section className="content-inner-2" data-content="OUR SERVICES" id="sidenav_ourServices">				
+					{/* <section className="content-inner-2" data-content="OUR SERVICES" id="sidenav_ourServices">				
 						<div className="container">
 							<div className="row align-items-end section-head" >
 								<div className="col-md-6">
@@ -303,8 +315,8 @@ class Index1 extends React.Component{
 											<img src={services1} alt=""/>
 										</div>
 										<div className="info">
-											<Link to={"./blog-details"}><h4 className="title">Home Interior</h4></Link>
-											<p>The Make & Deisgn is a collection of grand proportioned.</p>
+											<Link to={"./blog-details"}><h4 className="title">marbles</h4></Link>
+											<p>The is a collection of grand proportioned.</p>
 										</div>
 									</div>
 								</div>
@@ -314,8 +326,8 @@ class Index1 extends React.Component{
 											<img src={services2} alt=""/>
 										</div>
 										<div className="info">
-											<Link to={"./blog-details"}><h4 className="title">Club Interior</h4></Link>
-											<p>The MakeNDesign is a collection of grand proportioned.</p>
+											<Link to={"./blog-details"}><h4 className="title">Tiles</h4></Link>
+											<p>The is a collection of grand proportioned.</p>
 										</div>
 									</div>
 								</div>
@@ -325,8 +337,8 @@ class Index1 extends React.Component{
 											<img src={services3} alt=""/>
 										</div>
 										<div className="info">
-											<Link to={"./blog-details"}><h4 className="title">Office Interior</h4></Link>
-											<p>The MakeNDesign is a collection of grand proportioned.</p>
+											<Link to={"./blog-details"}><h4 className="title">Granite</h4></Link>
+											<p>The is a collection of grand proportioned.</p>
 										</div>
 									</div>
 								</div>
@@ -336,7 +348,7 @@ class Index1 extends React.Component{
 											<img src={services4} alt=""/>
 										</div>
 										<div className="info">
-											<Link to={"./blog-details"}><h4 className="title">Bar Interior</h4></Link>
+											<Link to={"./blog-details"}><h4 className="title">Accessories</h4></Link>
 											<p>The MakeNDesign is a collection of grand proportioned.</p>
 										</div>
 									</div>
@@ -347,7 +359,7 @@ class Index1 extends React.Component{
 											<img src={services5} alt=""/>
 										</div>
 										<div className="info">
-											<Link to={"./blog-details"}><h4 className="title">Shop Interior</h4></Link>
+											<Link to={"./blog-details"}><h4 className="title">Kitchen</h4></Link>
 											<p>The MakeNDesign is a collection of grand proportioned.</p>
 										</div>
 									</div>
@@ -358,7 +370,7 @@ class Index1 extends React.Component{
 											<img src={services6} alt=""/>
 										</div>
 										<div className="info">
-											<Link to={"./blog-details"}><h4 className="title">House Exterior</h4></Link>
+											<Link to={"./blog-details"}><h4 className="title">Mirrors</h4></Link>
 											<p>The MakeNDesign is a collection of grand proportioned.</p>
 										</div>
 									</div>
@@ -369,7 +381,7 @@ class Index1 extends React.Component{
 											<img src={services7} alt=""/>
 										</div>
 										<div className="info">
-											<Link to={"./blog-details"}><h4 className="title">Build Plan</h4></Link>
+											<Link to={"./blog-details"}><h4 className="title">Interior Finish</h4></Link>
 											<p>The MakeNDesign is a collection of grand proportioned.</p>
 										</div>
 									</div>
@@ -380,7 +392,7 @@ class Index1 extends React.Component{
 											<img src={services8} alt=""/>
 										</div>
 										<div className="info">
-											<Link to={"./blog-details"}><h4 className="title">Resorts Interior</h4></Link>
+											<Link to={"./blog-details"}><h4 className="title">Bathrooms & Plumning</h4></Link>
 											<p>The MakeNDesign is a collection of grand proportioned.</p>
 										</div>
 									</div>
@@ -391,7 +403,7 @@ class Index1 extends React.Component{
 											<img src={services9} alt=""/>
 										</div>
 										<div className="info">
-											<Link to={"./blog-details"}><h4 className="title">Studio Interior</h4></Link>
+											<Link to={"./blog-details"}><h4 className="title">Basin Mixers & Taps</h4></Link>
 											<p>The MakeNDesign is a collection of grand proportioned.</p>
 										</div>
 									</div>
@@ -431,12 +443,12 @@ class Index1 extends React.Component{
 								</div>
 							</div>
 						</div>
-					</section>
+					</section> */}
 					{/* Section-6 End*/}
 					{/* Section-7 Start*/}
-					<section className="content-inner-1" data-content="NEWS & EVENT" id="sidenav_newsEvent">	
+					{/* <section className="content-inner-1" data-content="NEWS & EVENT" id="sidenav_newsEvent">	
 						<EventSection />
-					</section>	
+					</section>	 */}
 					{/* Section-7 End*/}
 					
 					{/*<Mapview />*/}
