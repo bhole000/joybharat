@@ -11,7 +11,6 @@ import {
   Collapse,
   List,
   ListItem,
-  // ListItemIcon,
   ListItemText,
 } from "@material-ui/core";
 import ExpandLessIcon from "@material-ui/icons/ExpandLess";
@@ -20,51 +19,32 @@ import Blogs from "../Blog/Blogs";
 import AddVideo from "./videos/AddVideo";
 import Videos from "./videos/Videos";
 import { auth, logout } from "../../../firebase";
+import GalleryManager from "./GalleryManager";   // ✅ Import added
 
+// Helper to check for children in menu
 export function hasChildren(item) {
   const { items: children } = item;
-
-  if (children === undefined) {
-    return false;
-  }
-
-  if (children.constructor !== Array) {
-    return false;
-  }
-
-  if (children.length === 0) {
-    return false;
-  }
-
-  return true;
+  return Array.isArray(children) && children.length > 0;
 }
 
-const SingleLevel = ({ item, isChild }) => {
-  return (
-    <ListItem
-      button
-      component={Link}
-      to={item.to}
-      className={`${isChild ? "ml-3" : ""}`}
-    >
-      {/* <ListItemIcon>{item.icon}</ListItemIcon> */}
-      <ListItemText primary={item.title} />
-    </ListItem>
-  );
-};
+const SingleLevel = ({ item, isChild }) => (
+  <ListItem
+    button
+    component={Link}
+    to={item.to}
+    className={`${isChild ? "ml-3" : ""}`}
+  >
+    <ListItemText primary={item.title} />
+  </ListItem>
+);
 
 const MultiLevel = ({ item }) => {
   const { items: children } = item;
   const [open, setOpen] = useState(false);
 
-  const handleClick = () => {
-    setOpen((prev) => !prev);
-  };
-
   return (
-    <React.Fragment>
-      <ListItem button onClick={handleClick}>
-        {/* <ListItemIcon>{item.icon}</ListItemIcon> */}
+    <>
+      <ListItem button onClick={() => setOpen((prev) => !prev)}>
         <ListItemText primary={item.title} />
         {open ? <ExpandLessIcon /> : <ExpandMoreIcon />}
       </ListItem>
@@ -75,7 +55,7 @@ const MultiLevel = ({ item }) => {
           ))}
         </List>
       </Collapse>
-    </React.Fragment>
+    </>
   );
 };
 
@@ -97,13 +77,14 @@ const Admin = () => {
     <>
       <ToastContainer />
       <Row className="vw-100 min-vh-100">
+        {/* Sidebar */}
         <Col
           xs={3}
           className="bg-primary text-white d-flex flex-column justify-content-between"
         >
           <div>
             <div className="d-flex align-items-center justify-content-center p-2">
-              <img src={logo} alt="" />
+              <img src={logo} alt="Logo" />
             </div>
             <div className="ml-4">
               {menu.map((item, key) => (
@@ -115,6 +96,8 @@ const Admin = () => {
             <Button onClick={logout}>Logout</Button>
           </div>
         </Col>
+
+        {/* Main Content */}
         <Col>
           <Switch>
             <Route exact path={path}>
@@ -131,6 +114,11 @@ const Admin = () => {
             </Route>
             <Route path={`${path}/videos`}>
               <Videos />
+            </Route>
+
+            {/* ✅ New Gallery Manager Route */}
+            <Route path={`${path}/gallery-manager`}>
+              <GalleryManager />
             </Route>
           </Switch>
         </Col>

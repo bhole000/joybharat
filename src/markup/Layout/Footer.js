@@ -49,6 +49,15 @@ function Footercol1(){
 						<li><Link to={{  pathname:"#"}} className="fa fa-facebook mr-1" target="_blank" rel="noopener noreferrer" ></Link></li>
 						<li><Link to={{  pathname:"#"}} className="fa fa-linkedin mr-1" target="_blank" rel="noopener noreferrer"  ></Link></li>
 						<li><Link to={{  pathname:"#"}} className="fa fa-instagram" target="_blank" rel="noopener noreferrer" ></Link></li>
+						 <Link
+											to={"9830266108"}
+											data-toggle="tooltip"
+											data-placement="bottom"
+											className="whatsapp"
+											title="Whats App"
+										  >
+											<i className="fa fa-whatsapp"></i>
+										  </Link>
 					</ul>
 				</div>
 			</div>
@@ -97,8 +106,8 @@ function Footerbottom(){
 						<div className="widget-link "> 
 							<ul>
 								<li><Link to={"/about-us-1"}> About</Link></li>
-								<li><Link to={"/contact-us-1"}> Contact Us</Link></li>
-								<li><Link to={"/privacy-policy"}> Privacy Policy</Link></li>
+								<li><Link to={"/contact-us-2"}> Contact Us</Link></li>
+								{/* <li><Link to={"/privacy-policy"}> Privacy Policy</Link></li> */}
 							</ul>
 						</div>
 					</div>

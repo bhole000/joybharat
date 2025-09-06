@@ -78,9 +78,9 @@ class Index3 extends Component {
                 backgroundSize: "cover",
               }}
             >
-              <video autoPlay loop muted id="video-background">
+              {/* <video autoPlay loop muted id="video-background">
                 <source src={Mediavideo} type="video/mp4" />
-              </video>
+              </video> */}
               <div className="container-fluid">
                 <div className="welcome-header">
                   <div className="wlcm-logo">

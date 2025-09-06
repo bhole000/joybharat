@@ -55,8 +55,8 @@ Upcoming Exhibitions & Events
 We frequently host exclusive product launches, designer meets, and live demos to keep our customers updated with the latest trends in interiors and architecture. Stay tuned for our next grand exhibition — where luxury meets craftsmanship.
 							</p>
 						</div>
-						<Link to={"/contact-us-1"} className="btn btn-primary m-r10 m-b10">Contact us</Link>
-						<Link to={"/portfolio-1"} className="btn btn-primary m-b10">View Portfolio</Link>
+						<Link to={"/contact-us-2"} className="btn btn-primary m-r10 m-b10">Contact us</Link>
+						<Link to={"/portfolio-2"} className="btn btn-primary m-b10">View Portfolio</Link>
 					</div>
 				</div>
 			</div>

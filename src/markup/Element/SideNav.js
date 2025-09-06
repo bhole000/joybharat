@@ -62,24 +62,24 @@ class SideNav extends Component {
 							<i className="las la-user text-white"></i> <span className="text-white">ABOUT US</span>
 						</Link>
 					</li>
-					<li>
+					{/* <li>
 						<Link 
 							activeClass="active" to="sidenav_masterPlan" className="scroll nav-link"  smooth={true} offset={-70} duration={500}  >
 							<i className="las la-chart-bar text-white"></i> <span className="text-white">MASTER PLAN</span>
 						</Link>
-					</li>
+					</li> */}
 					<li>
 						<Link 
 							activeClass="active" to="sidenav_mainGallery" className="scroll nav-link"  smooth={true} offset={-70} duration={500} >
 							<i className="las la-image text-white"></i> <span className="text-white">Gallery</span>
 						</Link>
 					</li>
-					<li>
+					{/* <li>
 						<Link 
 							activeClass="active" to="sidenav_ourServices" className="scroll nav-link"  smooth={true} offset={-70} duration={500} >
-							<i className="las la-cog text-white"></i> <span className="text-white">Our Services</span>
+							<i className="las la-cog text-white"></i> <span className="text-white">Our products</span>
 						</Link>
-					</li>
+					</li> */}
 					<li>
 						<Link 
 							activeClass="active" to="sidenav_newsEvent" className="scroll nav-link"  smooth={true} offset={-70} duration={500}  >

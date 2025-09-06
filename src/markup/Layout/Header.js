@@ -179,7 +179,7 @@ function HeaderContent() {
                   </ul>
                 </li>
                 <li>
-                  <Link to={"/portfolio-1"}>Portfolio</Link>
+                  <Link to={"/portfolio-2"}>Portfolio</Link>
                   {/* <ul className="sub-menu">
                     <li>
                       <Link to={"/portfolio-1"}>Portfolio 1</Link>
