@@ -45,20 +45,45 @@ function Footercol1(){
 				</div>
 				<p>Marble • Tiles • Sanitaryware.</p>
 				<div className="dlab-social-icon">
-					<ul>
-						<li><Link to={{  pathname:"#"}} className="fa fa-facebook mr-1" target="_blank" rel="noopener noreferrer" ></Link></li>
-						<li><Link to={{  pathname:"#"}} className="fa fa-linkedin mr-1" target="_blank" rel="noopener noreferrer"  ></Link></li>
-						<li><Link to={{  pathname:"#"}} className="fa fa-instagram" target="_blank" rel="noopener noreferrer" ></Link></li>
-						 <Link
-											to={"9830266108"}
-											data-toggle="tooltip"
-											data-placement="bottom"
-											className="whatsapp"
-											title="Whats App"
-										  >
-											<i className="fa fa-whatsapp"></i>
-										  </Link>
-					</ul>
+				<ul className="social-links">
+  <li>
+    <a
+      href="https://facebook.com/"
+      className="fa fa-facebook mr-1"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Facebook"
+    ></a>
+  </li>
+  <li>
+    <a
+      href="https://linkedin.com/"
+      className="fa fa-linkedin mr-1"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="LinkedIn"
+    ></a>
+  </li>
+  <li>
+    <a
+      href="https://instagram.com/"
+      className="fa fa-instagram"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Instagram"
+    ></a>
+  </li>
+  <li>
+    <a
+      href="https://wa.me/9830266108"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="fa fa-whatsapp"
+      title="WhatsApp"
+    ></a>
+  </li>
+</ul>
+
 				</div>
 			</div>
 		</>
@@ -101,13 +126,13 @@ function Footerbottom(){
 		<>
 			<div className="container">
 				<div className="row">
-					<div className="col-md-6 col-sm-12 text-md-left text-center"> <span>© 2025 Joy Bharat Agencies. All Right Reserved Power by Creatornet</span> </div>
+					<div className="col-md-6 col-sm-12 text-md-left text-center"> <span>© 2025 Joy Bharat Agencies.Power by Creatornet</span> </div>
 					<div className="col-md-6 col-sm-12 text-md-right text-center"> 
 						<div className="widget-link "> 
 							<ul>
 								<li><Link to={"/about-us-1"}> About</Link></li>
 								<li><Link to={"/contact-us-2"}> Contact Us</Link></li>
-								{/* <li><Link to={"/privacy-policy"}> Privacy Policy</Link></li> */}
+								<li><Link to={"/login"}> login</Link></li>
 							</ul>
 						</div>
 					</div>
