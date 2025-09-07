@@ -27,7 +27,7 @@ class BannerSlider extends Component{
 									<p className="">
 										Industry is ready to help you in making unique-looking and best website in a moment.
 									</p>
-									<Link to={"/contact-us-1"} className="btn-transparent">
+									<Link to={"/contact-us-2"} className="btn-transparent">
 										<span>Read More</span>
 									</Link>
 								</div>
@@ -48,7 +48,7 @@ class BannerSlider extends Component{
 									<p className="">
 										Industry is ready to help you in making unique-looking and best website in a moment.
 									</p>
-									<Link to={"/contact-us-1"} className="btn-transparent">
+									<Link to={"/contact-us-2"} className="btn-transparent">
 										<span>Read More</span>
 									</Link>
 								</div>

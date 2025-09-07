@@ -10,6 +10,10 @@ import bgimg from "./../../../images/bg-view.png";
 import Pagination from "../../../utils/Pagination";
 import BlogSkeleton from "./BlogSkeleton";
 
+// 🆕 Import Lightbox
+import Lightbox from "react-image-lightbox";
+import "react-image-lightbox/style.css";
+
 const masonryOptions = { transitionDuration: 0 };
 const imagesLoadedOptions = { background: ".my-bg-image-el" };
 const PageSize = 6;
@@ -23,7 +27,6 @@ const categories = [
   "kitchen",
   "interior finish",
   "bathrooms",
-  
 ];
 
 const BlogMasonry = () => {
@@ -32,16 +35,24 @@ const BlogMasonry = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [filter, setFilter] = useState("all");
 
+  // 🆕 Lightbox states
+  const [isOpen, setIsOpen] = useState(false);
+  const [photoIndex, setPhotoIndex] = useState(0);
+
   const fetchBlogs = async () => {
     setIsLoading(true);
     const query = collection(db, "blogs");
     const docs = await getDocs(query);
-    const blogList = docs.docs.map(doc => ({
+    const blogList = docs.docs.map((doc) => ({
       id: doc.id,
       data: doc.data(),
     }));
     // Sort latest first
-    blogList.sort((a, b) => new Date(b.data.timeformated).getTime() - new Date(a.data.timeformated).getTime());
+    blogList.sort(
+      (a, b) =>
+        new Date(b.data.timeformated).getTime() -
+        new Date(a.data.timeformated).getTime()
+    );
     setBlogs(blogList);
     setIsLoading(false);
   };
@@ -51,8 +62,11 @@ const BlogMasonry = () => {
   }, []);
 
   // Filtered blogs based on selected category
-  const filteredBlogs = blogs.filter(blog => 
-    filter === "all" || (blog.data.category && blog.data.category.toLowerCase() === filter.toLowerCase())
+  const filteredBlogs = blogs.filter(
+    (blog) =>
+      filter === "all" ||
+      (blog.data.category &&
+        blog.data.category.toLowerCase() === filter.toLowerCase())
   );
 
   // Reset page when filter changes
@@ -68,6 +82,9 @@ const BlogMasonry = () => {
     return filteredBlogs.slice(firstPageIndex, lastPageIndex);
   }, [filteredBlogs, currentPage]);
 
+  // Collect current page images for Lightbox
+  const images = currentTableData.map((blog) => blog.data.blogimage);
+
   return (
     <>
       <Header />
@@ -77,10 +94,12 @@ const BlogMasonry = () => {
           <div className="container">
             {/* Filter Bar */}
             <div className="text-center mb-4">
-              {categories.map(cat => (
+              {categories.map((cat) => (
                 <button
                   key={cat}
-                  className={`btn m-2 ${filter === cat ? "btn-dark" : "btn-outline-dark"}`}
+                  className={`btn m-2 ${
+                    filter === cat ? "btn-dark" : "btn-outline-dark"
+                  }`}
                   onClick={() => handleFilterChange(cat)}
                 >
                   {cat.charAt(0).toUpperCase() + cat.slice(1)}
@@ -98,12 +117,26 @@ const BlogMasonry = () => {
                 imagesLoadedOptions={imagesLoadedOptions}
               >
                 {isLoading
-                  ? Array.from({ length: 6 }).map((_, i) => <BlogSkeleton key={i} />)
+                  ? Array.from({ length: 6 }).map((_, i) => (
+                      <BlogSkeleton key={i} />
+                    ))
                   : currentTableData.map((blog, index) => (
-                      <div className="col-md-6 col-lg-4 col-sm-12 mb-5" key={index}>
+                      <div
+                        className="col-md-6 col-lg-4 col-sm-12 mb-5"
+                        key={index}
+                        onClick={() => {
+                          setPhotoIndex(index);
+                          setIsOpen(true);
+                        }}
+                        style={{ cursor: "zoom-in" }}
+                      >
                         <div className="dlab-card blog-grid">
                           <div className="dlab-media">
-                            <img src={blog.data.blogimage} alt={blog.data.title} />
+                            <img
+                              src={blog.data.blogimage}
+                              alt={blog.data.title}
+                              className="w-full h-auto rounded-xl shadow-md hover:scale-105 transition-transform duration-300"
+                            />
                           </div>
                           <div className="dlab-info text-center">
                             <h3 className="dlab-title">{blog.data.title}</h3>
@@ -123,7 +156,7 @@ const BlogMasonry = () => {
                   currentPage={currentPage}
                   totalCount={filteredBlogs.length}
                   pageSize={PageSize}
-                  onPageChange={page => setCurrentPage(page)}
+                  onPageChange={(page) => setCurrentPage(page)}
                 />
               </nav>
             )}
@@ -134,6 +167,22 @@ const BlogMasonry = () => {
         </div>
       </div>
       <Footer2 />
+
+      {/* 🆕 Lightbox for Zoom */}
+      {isOpen && (
+        <Lightbox
+          mainSrc={images[photoIndex]}
+          nextSrc={images[(photoIndex + 1) % images.length]}
+          prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+          onCloseRequest={() => setIsOpen(false)}
+          onMovePrevRequest={() =>
+            setPhotoIndex((photoIndex + images.length - 1) % images.length)
+          }
+          onMoveNextRequest={() =>
+            setPhotoIndex((photoIndex + 1) % images.length)
+          }
+        />
+      )}
     </>
   );
 };

@@ -37,7 +37,7 @@ class SpecificationsBlog extends Component{
 			<Fragment>
 				<div className="col-md-4 col-lg-4 col-xl-3 col-xxxl-2 faq-list">
 					<div className="text-right mb-4 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
-						<Link to={"./blog-grid"} className="btn btn-primary">View All Products</Link>
+						<Link to={"./blog-masonry"} className="btn btn-primary">View All Products</Link>
 					</div>
 					<Accordion defaultActiveKey="0" className="faqSpecifications">
 						<Card >
@@ -47,7 +47,7 @@ class SpecificationsBlog extends Component{
 								</Accordion.Toggle>
 							</Card.Header>
 							<Accordion.Collapse eventKey="0" className="collapse faq-content">
-								<Card.Body >earthquake resistant r.c.c frame structure for safety aspects</Card.Body>
+								<Card.Body >Joy Bharat Agencies</Card.Body>
 							</Accordion.Collapse>
 						</Card>
 						<Card >
@@ -57,7 +57,7 @@ class SpecificationsBlog extends Component{
 								</Accordion.Toggle>
 							</Card.Header>
 							<Accordion.Collapse eventKey="1" className="collapse faq-content">
-								<Card.Body>earthquake resistant r.c.c frame structure for safety aspects</Card.Body>
+								<Card.Body>Joy Bharat Agencies</Card.Body>
 							</Accordion.Collapse>
 						</Card>
 						<Card >
@@ -67,7 +67,7 @@ class SpecificationsBlog extends Component{
 								</Accordion.Toggle>
 							</Card.Header>
 							<Accordion.Collapse eventKey="2" className="collapse faq-content">
-								<Card.Body>earthquake resistant r.c.c frame structure for safety aspects</Card.Body>
+								<Card.Body>Joy Bharat Agencies</Card.Body>
 							</Accordion.Collapse>
 						</Card>
 						<Card >
@@ -77,7 +77,7 @@ class SpecificationsBlog extends Component{
 								</Accordion.Toggle>
 							</Card.Header>
 							<Accordion.Collapse eventKey="3" className="collapse faq-content">
-								<Card.Body>earthquake resistant r.c.c frame structure for safety aspects</Card.Body>
+								<Card.Body>Joy Bharat Agencies</Card.Body>
 							</Accordion.Collapse>
 						</Card>
 						<Card >
@@ -87,7 +87,7 @@ class SpecificationsBlog extends Component{
 								</Accordion.Toggle>
 							</Card.Header>
 							<Accordion.Collapse eventKey="4" className="collapse faq-content">
-								<Card.Body>earthquake resistant r.c.c frame structure for safety aspects</Card.Body>
+								<Card.Body>Joy Bharat Agencies</Card.Body>
 							</Accordion.Collapse>
 						</Card>
 						<Card >
@@ -97,7 +97,7 @@ class SpecificationsBlog extends Component{
 								</Accordion.Toggle>
 							</Card.Header>
 							<Accordion.Collapse eventKey="5" className="collapse faq-content">
-								<Card.Body>earthquake resistant r.c.c frame structure for safety aspects</Card.Body>
+								<Card.Body>Joy Bharat Agencies</Card.Body>
 							</Accordion.Collapse>
 						</Card>
 						<Card >
@@ -107,7 +107,7 @@ class SpecificationsBlog extends Component{
 								</Accordion.Toggle>
 							</Card.Header>
 							<Accordion.Collapse eventKey="6" className="collapse faq-content">
-								<Card.Body>earthquake resistant r.c.c frame structure for safety aspects</Card.Body>
+								<Card.Body>Joy Bharat Agencies</Card.Body>
 							</Accordion.Collapse>
 						</Card>
 						<Card >
@@ -117,7 +117,7 @@ class SpecificationsBlog extends Component{
 								</Accordion.Toggle>
 							</Card.Header>
 							<Accordion.Collapse eventKey="7" className="collapse faq-content">
-								<Card.Body>earthquake resistant r.c.c frame structure for safety aspects</Card.Body>
+								<Card.Body>Joy Bharat Agencies</Card.Body>
 							</Accordion.Collapse>
 						</Card>
 						<Card >
@@ -127,7 +127,7 @@ class SpecificationsBlog extends Component{
 								</Accordion.Toggle>
 							</Card.Header>
 							<Accordion.Collapse eventKey="8" className="collapse faq-content">
-								<Card.Body>earthquake resistant r.c.c frame structure for safety aspects</Card.Body>
+								<Card.Body>Joy Bharat Agencies</Card.Body>
 							</Accordion.Collapse>
 						</Card>
 						

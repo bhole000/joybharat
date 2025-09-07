@@ -94,21 +94,25 @@ class Index1 extends React.Component{
 				<Header2 />
 				{/* <!-- Main Slider --> */}
 				<div className="page-content bg-white">
-					<div className="banner-three " style={{backgroundImage: "url("+ SliderImg +")", backgroundSize:"cover"}} data-content="HOME" id="sidenav_home" >
-						<div className="container">
-							<div className="row align-items-center banner-inner " >
-								<div className="col-md-6">
-									{/* <div className="content-blog">
-										<div className="banner-content">
-											<h1 className=" title  m-b20">Helping you and your<br/>house become better </h1>
-											<Link  to={"/contact-us-2"} className=" btn btn-primary">Get Now</Link>
-										</div>
-										<VideoPopup />
-									</div>	 */}
-								</div>
-							</div>
-						</div>
-					</div>	
+  <div className="banner-three relative w-full overflow-hidden" id="sidenav_home">
+    <img
+      src={SliderImg}
+      alt="Banner"
+      className="w-full h-auto object-cover"
+    />
+
+    {/* Optional Content Overlay */}
+    <div className="absolute inset-0 flex items-center justify-center">
+      <div className="text-center text-white">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4">
+          Helping you and your house become better
+        </h1>
+        <Link to={"/contact-us-2"} className="btn btn-primary">
+          Get Now
+        </Link>
+      </div>
+    </div>
+  </div>	
 					{/* <!-- Main Slider End--> */}
 					
 					{/* Section-1  Start*/}
@@ -175,121 +179,31 @@ class Index1 extends React.Component{
 		</section>*/}
 					{/* Section-4 End*/}
 					{/* Section-5 Start*/}
-					<section id="sidenav_mainGallery">
-						<div className="main-gallery" >
-							<div className="gallery-img">
-								<img src={main1} id="structureOne" className="active" alt=""/>
-								<img src={main2} id="structureTow" alt=""/>
-								<img src={main3} id="kitchenOne" alt=""/>
-								<img src={main4} id="kitchenTow" alt=""/>
-								<img src={main5} id="kitchenThree" alt=""/>
-								<img src={main6} id="interiorOne" alt=""/>
-							</div>
-							<div className="gallery-area">
-								<div className="gallery-category">
-									<div className="category-box">
-										<div className="media">
-											<img src={gallery1} alt=""/>
-										</div>
-										<div className="info">
-											<h3 className="title">Structure</h3>
-											<span><i className="las la-image"></i> 02</span>
-										</div>
-									</div>
-									<div className="category-media">
-										<div className="items" data-image-bx="structureOne">
-											<div className="media"><img src={gallery1} alt=""/></div>
-										</div>
-										<div className="items" data-image-bx="structureTow">
-											<div className="media"><img src={gallery2} alt=""/></div>
-										</div>
-									</div>
-								</div>
-								<div className="gallery-category">
-									<div className="category-box">
-										<div className="media">
-											<img src={gallery1} alt=""/>
-										</div>
-										<div className="info">
-											<h3 className="title">Kitchen</h3>
-											<span><i className="las la-image"></i> 03</span>
-										</div>
-									</div>
-									<div className="category-media">
-										<div className="items" data-image-bx="kitchenOne">
-											<div className="media"><img src={gallery3} alt=""/></div>
-										</div>
-										<div className="items" data-image-bx="kitchenTow">
-											<div className="media"><img src={gallery4} alt=""/></div>
-										</div>
-										<div className="items" data-image-bx="kitchenThree">
-											<div className="media"><img src={gallery5} alt=""/></div>
-										</div>
-									</div>
-								</div>
-								<div className="gallery-category">
-									<div className="category-box">
-										<div className="media">
-											<img src={gallery3} alt=""/>
-										</div>
-										<div className="info">
-											<h3 className="title">Interior Finish</h3>
-											<span><i className="las la-image"></i> 01</span>
-										</div>
-									</div>
-									<div className="category-media">
-										<div className="items" data-image-bx="interiorOne">
-											<div className="media"><img src={gallery6} alt=""/></div>
-										</div>
-									</div>
-								</div>
-								<div className="gallery-category">
-									<div className="category-box">
-										<div className="media">
-											<img src={gallery4} alt=""/>
-										</div>
-										<div className="info">
-											<h3 className="title">bedroom interior</h3>
-											<span><i className="las la-image"></i> 04</span>
-										</div>
-									</div>
-									<div className="category-media">
-										<div className="items" data-image-bx="interiorOne">
-											<div className="media"><img src={gallery6} alt=""/></div>
-										</div>
-										<div className="items" data-image-bx="kitchenOne">
-											<div className="media"><img src={gallery3} alt=""/></div>
-										</div>
-										<div className="items" data-image-bx="kitchenTow">
-											<div className="media"><img src={gallery4} alt=""/></div>
-										</div>
-										<div className="items" data-image-bx="interiorOne">
-											<div className="media"><img src={gallery6} alt=""/></div>
-										</div>
-									</div>
-								</div>
-								<div className="gallery-category">
-									<div className="category-box">
-										<div className="media">
-											<img src={gallery5} alt=""/>
-										</div>
-										<div className="info">
-											<h3 className="title">Window</h3>
-											<span><i className="las la-image"></i> 02</span>
-										</div>
-									</div>
-									<div className="category-media">
-										<div className="items" data-image-bx="interiorOne">
-											<div className="media"><img src={gallery6} alt=""/></div>
-										</div>
-										<div className="items" data-image-bx="kitchenTow">
-											<div className="media"><img src={gallery4} alt=""/></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
+					<section id="mainGallery" className="p-6">
+  <h2 className="text-2xl font-semibold text-center mb-6">Gallery</h2>
+  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <div className="overflow-hidden rounded-2xl shadow-md">
+      <img src={main1} alt="Structure" className="w-full h-auto object-cover"/>
+    </div>
+    <div className="overflow-hidden rounded-2xl shadow-md">
+      <img src={main2} alt="Structure" className="w-full h-auto object-cover"/>
+    </div>
+    <div className="overflow-hidden rounded-2xl shadow-md">
+      <img src={main3} alt="Kitchen" className="w-full h-auto object-cover"/>
+    </div>
+    <div className="overflow-hidden rounded-2xl shadow-md">
+      <img src={main4} alt="Kitchen" className="w-full h-auto object-cover"/>
+    </div>
+    <div className="overflow-hidden rounded-2xl shadow-md">
+      <img src={main5} alt="Kitchen" className="w-full h-auto object-cover"/>
+    </div>
+    <div className="overflow-hidden rounded-2xl shadow-md">
+      <img src={main6} alt="Interior" className="w-full h-auto object-cover"/>
+    </div>
+  </div>
+</section>
+
+
 					{/* Section-5 End*/}
 					{/* Section-6 Start*/}
 					{/* <section className="content-inner-2" data-content="OUR SERVICES" id="sidenav_ourServices">				
