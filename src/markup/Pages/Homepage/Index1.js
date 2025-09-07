@@ -105,7 +105,7 @@ class Index1 extends React.Component{
     <div className="absolute inset-0 flex items-center justify-center">
       <div className="text-center text-white">
         <h1 className="text-3xl md:text-5xl font-bold mb-4">
-          Helping you and your house become better
+          Helping you become better
         </h1>
         <Link to={"/contact-us-2"} className="btn btn-primary">
           Get Now

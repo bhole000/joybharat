@@ -1,0 +1,43 @@
+name: make_n_display
+description: A new Flutter project.
+publish_to: 'none'
+msix_config:
+  display_name: Das Nursery
+  publisher_display_name: Shul Labs India
+  identity_name: com.shullabs.make_n_display
+  msix_version: 1.1.0.0
+  logo_path: C:\path\to\logo.png
+  capabilities: internetClient, location, microphone, webcam
+version: 1.0.0+2
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  webview_flutter: ^3.0.4
+  shared_preferences:
+  url_launcher:
+  webview_windows: ^0.2.1
+  msix: ^3.6.3
+  flutter_custom_tabs: ^1.0.4
+  iconforest_flat_icons_social: ^1.0.0+1
+  carousel_slider:
+  reviews_slider:
+  shimmer:
+  fluttertoast:
+  youtube_player_flutter:
+  cached_network_image:
+  flutter_iconly:
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
